@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-    const [open , setOpen] = useState(true);
+    const [open , setOpen] = useState(false);
     useEffect(() => {
         const handleResize = () => {
             setWindowWidth(window.innerWidth);
