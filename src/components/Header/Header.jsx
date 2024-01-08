@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+    const [open , setOpen] = useState(true);
     useEffect(() => {
         const handleResize = () => {
             setWindowWidth(window.innerWidth);
@@ -21,10 +22,11 @@ const Navbar = () => {
       
      const handleClick = ()=>{
            console.log("Humburger Menu")
+           setOpen((prev) => !prev);
      }
     return (
         <>
-        <div className=' bg-[#2A2A2A] p-2 text-white flex items-center justify-center'>
+        <div className='relative bg-[#2A2A2A] p-2 text-white flex items-center justify-center'>
             <nav className=' w-[90%]  flex items-center justify-between'>
                 <div className='sm:w-[200px] w-[100px] '>
                     <img src={recoz_logo} className='w-[80%] sm:w-[50%]' />
@@ -69,6 +71,16 @@ const Navbar = () => {
 
             </nav>
         </div>
+       
+        {windowWidth <= 640 && open ? (
+            <div className='absolute top-[90px] right-0 z-[20] flex flex-col gap-2 bg-black text-white p-2 w-[30%] rounded-lg text-lg' onClick={handleClick}>
+                        <Link to="/" className='cursor-pointer' >Home</Link>
+                        <Link to="/aboutus" className='cursor-pointer '>About Us</Link>
+                        <Link>Services</Link>
+                        <Link>Course</Link>
+                        <Link>Contact</Link>
+                    </div>
+                ) : null}
         </>
     )
 }

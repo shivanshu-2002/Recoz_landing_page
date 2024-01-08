@@ -39,23 +39,23 @@ const AboutUs = () => {
         <div className='relative min-h-[70vh] font-SFPRODISPLAYREGULAR bg-white'>
             {/* Image Banner */}
             <div className='w-[100%]  '>
-                <div className={` w-[100%] h-[300px] flex flex-col items-center gap-2 justify-center text-white text-[64px] font-[600] sm:h-[500px] overflow-hidden animate-trans-right ${elem == 'Culture' ? 'border-b-2 border-black' : 'hidden'}`} style={containerStyle} >       
+                <div className={` w-[100%] h-[300px] flex flex-col items-center gap-2 justify-center text-white text-[64px] font-[600] sm:h-[500px]  animate-trans-right ${elem == 'Culture' ? 'border-b-2 border-black' : 'hidden'}`} style={containerStyle} >       
                     <div className='sm:text-[60px] text-4xl text-center'>We focus on integrity</div>
                     <div className='sm:text-[30px] text-[17px] text-center font-[500]'>collaboration through a vibrant and inclusive company culture.</div>        
                 </div>
-                <div className={` w-[100%] h-[300px] sm:h-[500px] flex flex-col items-center gap-2  justify-center text-white text-[64px] font-[600] overflow-hidden animate-trans-right ${elem == 'Carrier' ? 'border-b-2 border-black' : 'hidden'}`} style={containerStyle}>
+                <div className={` w-[100%] h-[300px] sm:h-[500px] flex flex-col items-center gap-2  justify-center text-white text-[64px] font-[600]  animate-trans-right ${elem == 'Carrier' ? 'border-b-2 border-black' : 'hidden'}`} style={containerStyle}>
                     <div className='sm:text-[60px] text-4xl text-center'>Come and Join Us</div>
                     <div className='sm:text-[30px] text-[17px] text-center font-[500]'>Join the Powerful team of More then 100 people</div>
                 </div>
-                <div className={` w-[100%] h-[300px] sm:h-[500px] flex flex-col items-center gap-2  justify-center text-white  font-[700] overflow-hidden animate-trans-right ${elem == 'Investor' ? 'border-b-2 border-black' : 'hidden'}`} style={containerStyle}>
+                <div className={` w-[100%] h-[300px] sm:h-[500px] flex flex-col items-center gap-2  justify-center text-white  font-[700]  animate-trans-right ${elem == 'Investor' ? 'border-b-2 border-black' : 'hidden'}`} style={containerStyle}>
                     <div className='sm:text-[60px] text-4xl text-center'>Invest in Our Vision</div>
                     <div className='sm:text-[30px] text-[17px] text-center font-[500]'>Unleashing Growth and Innovation</div>
                 </div>
-                <div className={` w-[100%] h-[300px] sm:h-[500px] flex flex-col items-center gap-2  justify-center text-white text-[64px] font-[600] overflow-hidden animate-trans-right ${elem == 'PrivacyPolicy' ? 'border-b-2 border-black' : 'hidden'}`} style={containerStyle}>
+                <div className={` w-[100%] h-[300px] sm:h-[500px] flex flex-col items-center gap-2  justify-center text-white text-[64px] font-[600]  animate-trans-right ${elem == 'PrivacyPolicy' ? 'border-b-2 border-black' : 'hidden'}`} style={containerStyle}>
                     <div className='sm:text-[60px] text-4xl text-center'>Privacy and Polices</div>
                     <div className='sm:text-[30px] text-[17px] text-center font-[500]'>Unleashing Growth and Innovation</div>
                 </div>
-                <div className={` w-[100%] h-[300px] sm:h-[500px] flex flex-col items-center gap-2  justify-center text-white text-[64px] font-[600] overflow-hidden animate-trans-right ${elem == 'CancellationPolicy' ? 'border-b-2 border-black' : 'hidden'}`} style={containerStyle}>
+                <div className={` w-[100%] h-[300px] sm:h-[500px] flex flex-col items-center gap-2  justify-center text-white text-[64px] font-[600]  animate-trans-right ${elem == 'CancellationPolicy' ? 'border-b-2 border-black' : 'hidden'}`} style={containerStyle}>
                     <div className='sm:text-[60px] text-4xl text-center'>Cancellation & Return Policy</div>
                     <div className='sm:text-[30px] text-[17px] text-center font-[500]'>Unleashing Growth and Innovation</div>
                 </div>
